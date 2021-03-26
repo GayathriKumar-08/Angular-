@@ -1,0 +1,101 @@
+<p>promisetable works!</p>
+<table>
+    <div *ngIf="mypromise.length>0">
+        <table border="1">
+        <tr>
+            <td>Id</td>
+            <td>Customer name</td>
+            <td>Customer Type</td>
+            <td>CreditCard Type</td>
+            <td>Currencies</td>
+            <td>Countries</td>
+            <td>Cities</td>
+            <td>Remove</td>
+            <td>Update</td>
+        </tr>
+        <tr *ngFor="let p of mypromise">
+            <td>{{p.id}}</td>
+            <td>{{p.customername}}</td>
+            <td>{{p.customertype}}</td>
+            <td>{{p.creditCardtype}}</td>
+            <td>{{p.currencies}}</td>
+            <td>{{p.countries}}</td>
+            <td>{{p.cities}}</td>
+            <td><button (click)="handleRemovePromise(p.id)">Remove</button></td>
+            <td><a routerLink="/updatepage/{{p.id}}">Update</a></td>
+            
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input type="text" [value]="mypromise.id"  #id /></td>
+        </tr>
+        <tr>
+            <td>Customer name</td>
+            <td><input type="text" [value]="mypromise.customername"  #customername /></td>
+        </tr>
+        <tr>
+            <td> Customer Type:</td>
+            <td><select class="drops"  [value]="mypromise.customertype" (change)="onNavigate3($event)" #customertype>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> CreditCard Type:</td>
+            <td><select class="drops" [value]="mypromise.creditCardtype" (change)="onNavigate4($event)" #creditCardtype>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Master">Master</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+                <td> Currencies:</td>
+                <td><select class="drops" [value]="mypromise.currencies" (change)="onNavigate5($event)"  #currencies>
+                        <option value="USA">USA</option>
+                        <option value="INR">INR</option>
+                        <option value="EUR">EUR</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </td>
+            </tr>
+       
+        <tr>
+            <td> Countries:</td>
+            <td><select class="drops" [value]="mypromise.countries" (change)="onNavigate6($event)"  #countries>
+                <option value="India">India</option>
+                <option value="UnitedStates">UnitedStates</option>
+                <option value="Europe">Europe</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </td>
+        </tr>
+        <tr></tr>
+                <tr>
+                <td> Cities:</td>
+                <td><select class="drops" [value]="mypromise.cities" (change)="onNavigate7($event)"  #cities>
+                    <option  value="Chennai">Chennai</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="New York">New York</option>
+                    <option value="California">California</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Berlin">Berlin</option>
+                    <option value="Rome">Rome</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="NewCastle">NewCastle</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Gold Coast">Gold Coast</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <button class="logout" (click)="handleAddPromise(id.value,customername.value,customertype.value,
+    creditCardtype.value,currencies.value,countries.value,cities.value)">Add</button>
+  
+    </div>
+    

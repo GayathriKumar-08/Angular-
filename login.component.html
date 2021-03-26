@@ -1,0 +1,21 @@
+
+
+<div class="htmllang">
+    <div class="login">
+        <div class="heading">
+            <h1 class="heading">Sign in</h1>
+            <table>
+                <tr><div class ="invalid" *ngIf="invalid">Invalid username or password!!!!!</div></tr>
+                <tr>
+                    <input type="text" class="form-control" [(ngModel)]="uid"  placeholder="Username or email">
+                </tr>
+                <br>
+                <tr>
+                    <input type="password" class="form-control" [(ngModel)]="pwd"  placeholder="Password">
+                </tr>
+                <br>
+                <tr><button type="submit" class="float" (click)="handleClick()">Login</button></tr>
+            </table>
+        </div>
+    </div>
+</div>

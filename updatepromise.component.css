@@ -1,0 +1,12 @@
+.drops{
+    background-color:burlywood;
+    width: 150%;
+    }
+    .logout
+    {
+        background-color:indianred;
+        color:white;
+        padding:10px;
+        margin-left:10px;
+        border-radius: 5px;
+    }

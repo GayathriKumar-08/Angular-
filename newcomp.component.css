@@ -1,0 +1,31 @@
+.age
+{
+    background-color:burlywood;
+    padding:20px;
+    width: 30%;
+    height: 30%;
+    font-weight: bold;
+}
+.creditcard
+{
+    background-color: cadetblue;
+    padding:20px;
+    width: 30%;
+    height: 30%;
+    font-weight: bold;
+}
+.Currency
+{
+    background-color:grey;
+    padding:20px;
+    width: 30%;
+    height: 30%;
+    font-weight: bold;
+}
+.logout
+{
+    background-color:indianred;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+}

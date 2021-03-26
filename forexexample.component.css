@@ -1,0 +1,18 @@
+
+.inptbox
+{
+    background-color: bisque;
+    padding:10px;
+}
+.drop:hover
+{
+    background-color:lightskyblue;
+    width: 50%;
+}
+.logout
+{
+    background-color:indianred;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+}

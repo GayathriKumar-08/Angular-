@@ -1,0 +1,24 @@
+.cmm{
+    background-color: darkcyan;
+    color:white;
+    }
+    .cmm:hover
+    {
+        background-color:mediumblue;
+        color:white;
+        width:60%;
+        border-radius: 5px;
+        padding:10px;
+    }
+.inptbox
+{
+    background-color:wheat;
+    padding:10px;
+}
+.logout
+{
+    background-color:indianred;
+    color:white;
+    padding:10px;
+    border-radius: 5px;
+}

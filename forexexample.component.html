@@ -1,0 +1,37 @@
+<p>forexexample works!</p>
+<div>
+    <p>Forex Calculation!!!!</p>
+    <table>
+        <tr>Enter the amount</tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="amount" class="inptbox" /><br></td>
+        </tr>
+        <tr>From</tr>
+        <tr>
+            <td> <select class="drop" [(ngModel)]="optionSelected" (change)="onNavigate($event)">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option>
+                </select></td>
+        </tr>
+        <tr>To</tr>
+        <tr>
+            <td> <select class="drop" [(ngModel)]="optionSelected1" (change)="onNavigate1($event)">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AUD">AUD</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <span>
+            <button class="logout" (click)="handleAmount()">Convert</button>
+            <button class="logout" (click)="handlelogout()">logout</button>
+            <button class="logout" (click)="handledashboard()">back</button>
+        </span>
+    </div>
+    
+</div>

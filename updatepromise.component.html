@@ -1,0 +1,59 @@
+<p>updatepromise works!</p>
+<table>
+    <tr>
+        <td>Id</td>
+        <td><input type="text" [(ngModel)]="promise.id"/></td>
+    </tr>
+    <tr>
+        <td>Customer name</td>
+        <td><input type="text" [(ngModel)]="promise.customername"/></td>
+    </tr>
+    <tr>
+        <td> Customer Type:</td>
+        <td><select class="drops"  [(ngModel)]="promise.customertype" (change)="onNavigate3($event)" >
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td> CreditCard Type:</td>
+        <td><select class="drops" [(ngModel)]="promise.creditCardtype" (change)="onNavigate4($event)">
+                <option value="Rupay">Rupay</option>
+                <option value="Master">Master</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td> Currencies:</td>
+        <td><select class="drops" [(ngModel)]="promise.currencies" (change)="onNavigate5($event)">
+                <option value="USA">USA</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td> Countries:</td>
+        <td><select class="drops"  [(ngModel)]="promise.countries" (change)="onNavigate6($event)">
+                <option value="India">India</option>
+                <option value="UnitedStates">United States</option>
+                <option value="Europe">Europe</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td> Cities:</td>
+        <td> <select class="drops" [(ngModel)]="promise.cities" (change)="onNavigate7($event)">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </td>
+      <tr><button class="logout" (click)="goBack()">GoBack</button></tr>
+</table>

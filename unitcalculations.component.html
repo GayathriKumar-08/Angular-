@@ -1,0 +1,52 @@
+<div>
+    <p>UnitConversionService</p>
+    <table>
+        <tr>Enter the number in centimeter</tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="cm" class="inptbox" /></td>
+        </tr>
+        <tr>
+            <td><button class="cmm" (click)="handleCMtoM()">Calculate</button></td>
+        </tr>
+    </table>
+</div>
+<!--------------------------------------------------------------------------------------------------->
+<div>
+    <table>
+        <tr>Enter the number in centigrade</tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="cf" class="inptbox" /></td>
+        </tr>
+        <tr><button class="cmm" (click)="handleCtoF()">Calculate</button>
+        </tr>
+    </table>
+</div>
+<!--------------------------------------------------------------------------------------------------->
+<div>
+    <table>
+        <tr>Enter the number kilograms</tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="km" class="inptbox" /></td>
+        </tr>
+        <tr><button class="cmm" (click)="handleKtoP()">Calculate</button>
+        </tr>
+    </table>
+</div>
+<!--------------------------------------------------------------------------------------------------->
+<div>
+    <table>
+        <tr>Enter the number kilometer </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="kmm" class="inptbox" /></td>
+        </tr>
+        <tr><button class="cmm" (click)="handleKtoM()">Calculate</button>
+        </tr>
+    </table>
+</div>
+<div>
+    <span>
+        <button class="logout" (click)="handlelogout()">logout</button>
+        <button class="logout" (click)="handledashboard()">back</button>
+    </span>
+</div>
+<!--------------------------------------------------------------------------------------------------->

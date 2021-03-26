@@ -1,0 +1,90 @@
+<h2>Pipe Concepts</h2>
+<div class="age">
+    <h3>Age Claculation</h3>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <table cellpadding="10px" cellspacing="5px">
+                <tr>
+                    <td>Year:</td>
+                    <td><input type="date" [(ngModel)]="year.name"></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" [(ngModel)]="age.name"></td>
+                </tr>
+                <tr>
+                    <td><button (click)="onSubmit()">Get-Age</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="creditcard">
+    <h3>Credit Card Format</h3>
+    <table cellpadding="10px" cellspacing="5px">
+        <tr>
+            <td>cardnumber:</td>
+            <td><input type="text" [(ngModel)]="digits.name"></td>
+        </tr>
+
+        <tr>
+            <td>Formatted credit card number:</td>
+            <td><input type="text" [(ngModel)]="masked.name"></td>
+        </tr>
+        <tr>
+            <p>{{masked.name}}</p>
+        </tr>
+
+        <tr>
+            <td><button (click)="handleFormat()">Format</button></td>
+        </tr>
+    </table>
+</div>
+<hr>
+
+<div class="Currency">
+    <h3>Currency Conversion</h3>
+    <table cellpadding="10px" cellspacing="5px">
+        <tr>
+            <td>Enter the amount in rupee</td>
+            <td><input type="text" [(ngModel)]="curr"></td>
+        </tr>
+
+        <!-- <tr>
+            <td>converted amount</td>
+            <td><input type="text" [(ngModel)]="convert"></td> 
+         </tr>-->
+
+        <tr>
+            <td><button (click)="handleCurrency()">get amount</button></td>
+        </tr>
+    </table>
+</div>
+<hr>
+<div>
+    <p>Currency Pipe</p>
+    <input type="text" [(ngModel)]="currencyconvert" />
+    <p>{{currencyconvert | currency:'USD':'symbol'}}</p>
+    <p>{{currencyconvert | currency:'INR':'symbol'}}</p>
+    <p>{{currencyconvert | currency:'EUR':'symbol'}}</p>
+    <p>{{currencyconvert | currency:'AUD':'symbol'}}</p>
+</div>
+<hr>
+
+<div>
+    <p>available Balance </p>
+    <input type="text" [(ngModel)]="balanceamt" />
+    <p>{{balanceamt | number:'1.2-2'}}</p>
+
+    <p>available Balance </p>
+    <input type="text" [(ngModel)]="balance" />
+    <p>{{balance | number:'1.2-2'}}</p>
+</div>
+<div>
+    <span>
+        <button class="logout" (click)="handlelogout()">logout</button>
+        <button class="logout" (click)="handledashboard()">back</button>
+    </span>
+</div>
