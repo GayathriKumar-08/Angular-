@@ -1,0 +1,16 @@
+.logout:hover
+{
+ background-color:blue;
+ font-weight: bold;
+ color: white;
+ border-radius: 5px;
+ padding: 10px;
+ width:15%;
+}
+.logout
+{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 5px;
+    margin:20px;
+}
